@@ -1,0 +1,51 @@
+feature,coefficient,direction
+"location_US, CA, San Mateo",3.2925279335505833,fraudulent_signal
+earn,3.171858653461199,fraudulent_signal
+department_Information Technology ,3.1718555887392017,fraudulent_signal
+"location_US, TX, AUSTIN",3.038608410192632,fraudulent_signal
+link,2.9927048962096503,fraudulent_signal
+company_profile description,2.887490708490882,fraudulent_signal
+"location_US, TX, DALLAS",2.7028232783206976,fraudulent_signal
+000,2.667183205540138,fraudulent_signal
+money,2.6484993602137257,fraudulent_signal
+work home,2.6430331838077294,fraudulent_signal
+income,2.583329636158696,fraudulent_signal
+data entry,2.5086382315412266,fraudulent_signal
+function_Health Care Provider,-2.4782802434526183,legitimate_signal
+"location_US, OH, Cincinnati",2.406314379471499,fraudulent_signal
+"location_US, CA, ",2.373880339912741,fraudulent_signal
+"location_US, OH, Groveport",2.361790408228849,fraudulent_signal
+"location_MY, , ",2.2973914744463944,fraudulent_signal
+"location_US, IN, Bloomington",2.2691938189688536,fraudulent_signal
+aptitude,2.265101442267222,fraudulent_signal
+duration,2.259323138084187,fraudulent_signal
+department_Oil & Energy,2.253966817807031,fraudulent_signal
+industry_Oil & Energy,2.25361279424439,fraudulent_signal
+"location_US, NY, NY",2.1763896414058816,fraudulent_signal
+department_Sales and Research,2.165540913849481,fraudulent_signal
+industry_Restaurants,-2.1505282904365517,legitimate_signal
+department_Oil and Gas,-2.133765608831512,legitimate_signal
+"location_PL, MZ, Warsaw",2.1204142998806406,fraudulent_signal
+department_Engineering ,2.118839877431142,fraudulent_signal
+staffing,2.082739784168534,fraudulent_signal
+"location_US, CA, San Jose",2.061252542501672,fraudulent_signal
+encouraged,2.034112453582567,fraudulent_signal
+has_company_logo,-2.02743341009994,legitimate_signal
+facilitating,1.9718966740139396,fraudulent_signal
+hotel,1.9716419204548155,fraudulent_signal
+department_Biotech ,1.9703154366522286,fraudulent_signal
+department_biotech,1.9447476627388638,fraudulent_signal
+department_Product Development,1.9344737638862068,fraudulent_signal
+client,-1.9298282044378594,legitimate_signal
+town,1.9235895457076764,fraudulent_signal
+department_Power Plant & Energy,1.914509465456787,fraudulent_signal
+department_Leadership,1.8882604135075745,fraudulent_signal
+exciting,1.8864120279346077,fraudulent_signal
+department_Information Technology,1.8783598601753941,fraudulent_signal
+"location_AU, , ",1.8601636553477703,fraudulent_signal
+"location_US, TX, Houston",1.8588889393131103,fraudulent_signal
+department_Administrative,1.8547700927453799,fraudulent_signal
+entry,1.8447957116442315,fraudulent_signal
+industry_Media Production,1.8325710898920073,fraudulent_signal
+leveraging,1.8311150039177897,fraudulent_signal
+industry_Internet,-1.784833031222215,legitimate_signal

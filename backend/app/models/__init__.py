@@ -1,0 +1,3 @@
+"""
+TrustHire Models Package
+"""

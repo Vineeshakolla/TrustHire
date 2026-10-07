@@ -1,0 +1,94 @@
+/* TrustHire - Basic Foundation Styling */
+
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #38bdf8;
+    --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.status-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.status-message {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.footer {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}

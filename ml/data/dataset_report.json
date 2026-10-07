@@ -1,0 +1,419 @@
+{
+    "project": "TrustHire",
+    "step": "Step 2 - EMSCAD Dataset Inspection & EDA",
+    "dataset_filename": "fake_job_postings.csv",
+    "dataset_relative_path": "data\\raw\\fake_job_postings.csv",
+    "rows": 17880,
+    "columns": 18,
+    "schema_status": "WARN",
+    "schema": {
+        "status": "WARN",
+        "total_columns": 18,
+        "actual_columns": [
+            "title",
+            "location",
+            "department",
+            "salary_range",
+            "company_profile",
+            "description",
+            "requirements",
+            "benefits",
+            "telecommuting",
+            "has_company_logo",
+            "has_questions",
+            "employment_type",
+            "required_experience",
+            "required_education",
+            "industry",
+            "function",
+            "fraudulent",
+            "in_balanced_dataset"
+        ],
+        "column_dtypes": {
+            "title": "object",
+            "location": "object",
+            "department": "object",
+            "salary_range": "object",
+            "company_profile": "object",
+            "description": "object",
+            "requirements": "object",
+            "benefits": "object",
+            "telecommuting": "object",
+            "has_company_logo": "object",
+            "has_questions": "object",
+            "employment_type": "object",
+            "required_experience": "object",
+            "required_education": "object",
+            "industry": "object",
+            "function": "object",
+            "fraudulent": "object",
+            "in_balanced_dataset": "object"
+        },
+        "expected_columns_found": [
+            "title",
+            "location",
+            "department",
+            "salary_range",
+            "company_profile",
+            "description",
+            "requirements",
+            "benefits",
+            "telecommuting",
+            "has_company_logo",
+            "has_questions",
+            "employment_type",
+            "required_experience",
+            "required_education",
+            "industry",
+            "function",
+            "fraudulent"
+        ],
+        "expected_columns_missing": [
+            "job_id"
+        ],
+        "unexpected_columns_present": [
+            "in_balanced_dataset"
+        ]
+    },
+    "missing_values": [
+        {
+            "Column": "salary_range",
+            "Data Type": "object",
+            "Missing Count": 15012,
+            "Missing %": 83.96
+        },
+        {
+            "Column": "department",
+            "Data Type": "object",
+            "Missing Count": 11547,
+            "Missing %": 64.58
+        },
+        {
+            "Column": "required_education",
+            "Data Type": "object",
+            "Missing Count": 8105,
+            "Missing %": 45.33
+        },
+        {
+            "Column": "benefits",
+            "Data Type": "object",
+            "Missing Count": 7196,
+            "Missing %": 40.25
+        },
+        {
+            "Column": "required_experience",
+            "Data Type": "object",
+            "Missing Count": 7050,
+            "Missing %": 39.43
+        },
+        {
+            "Column": "function",
+            "Data Type": "object",
+            "Missing Count": 6455,
+            "Missing %": 36.1
+        },
+        {
+            "Column": "industry",
+            "Data Type": "object",
+            "Missing Count": 4903,
+            "Missing %": 27.42
+        },
+        {
+            "Column": "employment_type",
+            "Data Type": "object",
+            "Missing Count": 3471,
+            "Missing %": 19.41
+        },
+        {
+            "Column": "company_profile",
+            "Data Type": "object",
+            "Missing Count": 3308,
+            "Missing %": 18.5
+        },
+        {
+            "Column": "requirements",
+            "Data Type": "object",
+            "Missing Count": 2689,
+            "Missing %": 15.04
+        },
+        {
+            "Column": "location",
+            "Data Type": "object",
+            "Missing Count": 346,
+            "Missing %": 1.94
+        },
+        {
+            "Column": "title",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "description",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "telecommuting",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "has_company_logo",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "has_questions",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "fraudulent",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        },
+        {
+            "Column": "in_balanced_dataset",
+            "Data Type": "object",
+            "Missing Count": 0,
+            "Missing %": 0.0
+        }
+    ],
+    "duplicates": {
+        "total_exact_duplicates": 235,
+        "exact_duplicate_percentage": 1.31,
+        "total_duplicate_job_ids": 0,
+        "duplicate_job_id_percentage": 0.0
+    },
+    "target_analysis": {
+        "exists": true,
+        "column_name": "fraudulent",
+        "dtype": "object",
+        "unique_values": [
+            "f",
+            "t"
+        ],
+        "value_counts": {
+            "f": 17014,
+            "t": 866
+        },
+        "percentages": {
+            "f": 95.16,
+            "t": 4.84
+        },
+        "label_mapping": {
+            "0": "Legitimate (Possibly Legitimate)",
+            "1": "Potentially Fraudulent (Higher Risk)"
+        },
+        "is_imbalanced": true
+    },
+    "salary_analysis": {
+        "exists": true,
+        "dtype": "object",
+        "missing_count": 15012,
+        "missing_percentage": 83.96,
+        "non_empty_count": 2868,
+        "unique_values_count": 874,
+        "sample_real_examples": [
+            "20000-28000",
+            "100000-120000",
+            "120000-150000",
+            "50000-65000",
+            "40000-50000"
+        ]
+    },
+    "text_feature_analysis": {
+        "title": {
+            "non_empty_records": 17880,
+            "empty_records": 0,
+            "char_len_min": 3,
+            "char_len_max": 142,
+            "char_len_mean": 28.53,
+            "char_len_median": 25.0,
+            "word_count_min": 1,
+            "word_count_max": 19,
+            "word_count_mean": 3.76,
+            "word_count_median": 3.0
+        },
+        "company_profile": {
+            "non_empty_records": 14572,
+            "empty_records": 3308,
+            "char_len_min": 16,
+            "char_len_max": 6450,
+            "char_len_mean": 851.3,
+            "char_len_median": 709.0,
+            "word_count_min": 1,
+            "word_count_max": 902,
+            "word_count_mean": 117.73,
+            "word_count_median": 99.0
+        },
+        "description": {
+            "non_empty_records": 17880,
+            "empty_records": 0,
+            "char_len_min": 10,
+            "char_len_max": 55130,
+            "char_len_mean": 1438.56,
+            "char_len_median": 1158.0,
+            "word_count_min": 1,
+            "word_count_max": 3917,
+            "word_count_mean": 185.97,
+            "word_count_median": 156.0
+        },
+        "requirements": {
+            "non_empty_records": 15191,
+            "empty_records": 2689,
+            "char_len_min": 8,
+            "char_len_max": 37994,
+            "char_len_mean": 860.85,
+            "char_len_median": 667.0,
+            "word_count_min": 1,
+            "word_count_max": 2963,
+            "word_count_mean": 105.6,
+            "word_count_median": 84.0
+        },
+        "benefits": {
+            "non_empty_records": 10684,
+            "empty_records": 7196,
+            "char_len_min": 6,
+            "char_len_max": 19455,
+            "char_len_mean": 448.19,
+            "char_len_median": 287.0,
+            "word_count_min": 1,
+            "word_count_max": 1379,
+            "word_count_mean": 56.91,
+            "word_count_median": 37.0
+        }
+    },
+    "categorical_feature_analysis": {
+        "location": {
+            "unique_values_count": 3105,
+            "missing_count": 346,
+            "top_5_frequent_values": {
+                "GB, LND, London": 718,
+                "US, NY, New York": 658,
+                "US, CA, San Francisco": 472,
+                "GR, I, Athens": 464,
+                "US, , ": 339
+            }
+        },
+        "department": {
+            "unique_values_count": 1337,
+            "missing_count": 11547,
+            "top_5_frequent_values": {
+                "Sales": 551,
+                "Engineering": 487,
+                "Marketing": 401,
+                "Operations": 270,
+                "IT": 225
+            }
+        },
+        "employment_type": {
+            "unique_values_count": 5,
+            "missing_count": 3471,
+            "top_5_frequent_values": {
+                "Full-time": 11620,
+                "Contract": 1524,
+                "Part-time": 797,
+                "Temporary": 241,
+                "Other": 227
+            }
+        },
+        "required_experience": {
+            "unique_values_count": 7,
+            "missing_count": 7050,
+            "top_5_frequent_values": {
+                "Mid-Senior level": 3809,
+                "Entry level": 2697,
+                "Associate": 2297,
+                "Not Applicable": 1116,
+                "Director": 389
+            }
+        },
+        "required_education": {
+            "unique_values_count": 13,
+            "missing_count": 8105,
+            "top_5_frequent_values": {
+                "Bachelor's Degree": 5145,
+                "High School or equivalent": 2080,
+                "Unspecified": 1397,
+                "Master's Degree": 416,
+                "Associate Degree": 274
+            }
+        },
+        "industry": {
+            "unique_values_count": 131,
+            "missing_count": 4903,
+            "top_5_frequent_values": {
+                "Information Technology and Services": 1734,
+                "Computer Software": 1376,
+                "Internet": 1062,
+                "Marketing and Advertising": 828,
+                "Education Management": 822
+            }
+        },
+        "function": {
+            "unique_values_count": 37,
+            "missing_count": 6455,
+            "top_5_frequent_values": {
+                "Information Technology": 1749,
+                "Sales": 1468,
+                "Engineering": 1348,
+                "Customer Service": 1229,
+                "Marketing": 830
+            }
+        }
+    },
+    "binary_feature_analysis": {
+        "telecommuting": {
+            "unique_values": [
+                "f",
+                "t"
+            ],
+            "value_counts": {
+                "f": 17113,
+                "t": 767
+            },
+            "percentages": {
+                "f": 95.71,
+                "t": 4.29
+            },
+            "is_strictly_binary": false
+        },
+        "has_company_logo": {
+            "unique_values": [
+                "t",
+                "f"
+            ],
+            "value_counts": {
+                "t": 14220,
+                "f": 3660
+            },
+            "percentages": {
+                "t": 79.53,
+                "f": 20.47
+            },
+            "is_strictly_binary": false
+        },
+        "has_questions": {
+            "unique_values": [
+                "f",
+                "t"
+            ],
+            "value_counts": {
+                "f": 9088,
+                "t": 8792
+            },
+            "percentages": {
+                "f": 50.83,
+                "t": 49.17
+            },
+            "is_strictly_binary": false
+        }
+    }
+}

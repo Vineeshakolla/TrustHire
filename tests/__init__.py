@@ -1,0 +1,3 @@
+"""
+TrustHire Test Suite
+"""

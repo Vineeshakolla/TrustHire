@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.*
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Data & Models (generated artifacts)
+ml/data/raw/*
+!ml/data/raw/.gitkeep
+ml/data/processed/*
+!ml/data/processed/.gitkeep
+ml/saved_models/*
+!ml/saved_models/.gitkeep
+ai/models/*
+!ai/models/.gitkeep
+
+# SQLite database files
+database/*.db
+database/*.sqlite3
+*.db
+*.sqlite3
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies & build output
+frontend/node_modules/
+frontend/dist/
